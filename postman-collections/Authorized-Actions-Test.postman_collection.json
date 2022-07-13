@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "16252d6a-98d4-478a-98dd-009aa959e232",
+		"name": "Authorized Actions Test",
+		"description": "This collection tests actions that require accessing user information.\nIf the user is not authorized to access the information then they are not authorized.\nA user may only trade and view their own information.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"auto1\", \"password\":\"tester\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "good buy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0b02f345-86c8-4459-889b-06237bc02dd7",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stock\": \"AAPL\",\n    \"type\": \"buy\",\n    \"limit\": 55,\n    \"expire\": \"gtc\",\n    \"quantity\": 55,\n    \"userID\": 901\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/901/buyorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"901",
+						"buyorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "good subscribe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ef0756d4-8922-4691-85a4-8a6a9d4b9021",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"symbol\": \"AAPL\",\n    \"minPercentChange\": 5,\n    \"activated\": false,\n    \"notifiedToday\": false,\n    \"userID\": 901\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/901/subscriptions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"901",
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bad subscribe other user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "515e594d-c04e-4aa8-8cbe-fe8a545007b3",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {",
+							"    pm.response.to.have.status(401);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"symbol\": \"AAPL\",\n    \"minPercentChange\": 5,\n    \"activated\": false,\n    \"notifiedToday\": false,\n    \"userID\": 902\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/902/subscriptions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"902",
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bad buy other user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7f449b67-1633-4f97-bca1-983525523e00",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {",
+							"    pm.response.to.have.status(401);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stock\": \"AAPL\",\n    \"type\": \"buy\",\n    \"limit\": 55,\n    \"expire\": \"gtc\",\n    \"quantity\": 55,\n    \"userID\": 902\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/902/buyorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"902",
+						"buyorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "good get orders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "549307be-eb08-4738-a6c3-870579dc24fe",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/901/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"901",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bad get another user profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "78b3a2b2-3943-4617-9323-87bd9f1aca83",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {",
+							"    pm.response.to.have.status(401);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/auto2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"auto2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bad get another users orders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e5b9ea3c-ad48-44f2-9cb9-f49b0a5a2cb6",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {",
+							"    pm.response.to.have.status(401);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/902/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"902",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e4e58396-0b0a-4a5d-92e7-c40e5e6d9d52",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,392 @@
+[
+    {
+       "symbol":"AXP",
+       "name":"American Express Company",
+       "price":101,
+       "low":101,
+       "high":101,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"AMGN",
+       "name":"Amgen Inc.",
+       "price":245,
+       "low":245,
+       "high":245,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"AAPL",
+       "name":"Apple Inc.",
+       "price":113,
+       "low":113,
+       "high":113,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"BA",
+       "name":"Boeing Co.",
+       "price":168,
+       "low":168,
+       "high":168,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"CAT",
+       "name":"Caterpillar Inc.",
+       "price":149,
+       "low":149,
+       "high":149,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"CSCO",
+       "name":"Cisco Systems Inc.",
+       "price":38,
+       "low":38,
+       "high":38,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"CVX",
+       "name":"Chevron Corp.",
+       "price":71,
+       "low":71,
+       "high":71,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"GS",
+       "name":"Goldman Sachs Group Inc.",
+       "price":199,
+       "low":199,
+       "high":199,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"HD",
+       "name":"Home Depot Inc.",
+       "price":279,
+       "low":279,
+       "high":279,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"HON",
+       "name":"Honeywell International Inc.",
+       "price":165,
+       "low":165,
+       "high":165,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"IBM",
+       "name":"IBM",
+       "price":120,
+       "low":120,
+       "high":120,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"INTC",
+       "name":"Intel Corp.",
+       "price":51,
+       "low":51,
+       "high":51,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"JNJ",
+       "name":"Johnson & Johnson",
+       "price":146,
+       "low":146,
+       "high":146,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"KO",
+       "name":"Coca-Cola Co.",
+       "price":49,
+       "low":49,
+       "high":49,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"JPM",
+       "name":"JPMorgan Chase & Co.",
+       "price":97,
+       "low":97,
+       "high":97,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"MCD",
+       "name":"Mcdonald's Corp.",
+       "price":222,
+       "low":222,
+       "high":222,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"MMM",
+       "name":"3M Co.",
+       "price":160,
+       "low":160,
+       "high":160,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"MRK",
+       "name":"Merck & Co., Inc.",
+       "price":80,
+       "low":80,
+       "high":80,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"MSFT",
+       "name":"Microsoft Corp.",
+       "price":206,
+       "low":206,
+       "high":206,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"NKE",
+       "name":"Nike Inc.",
+       "price":126,
+       "low":126,
+       "high":126,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"PG",
+       "name":"Procter & Gamble Co.",
+       "price":138,
+       "low":138,
+       "high":138,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"TRV",
+       "name":"Travelers Companies Inc.",
+       "price":108,
+       "low":108,
+       "high":108,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"UNH",
+       "name":"UnitedHealth Group Inc.",
+       "price":311,
+       "low":311,
+       "high":311,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"CRM",
+       "name":"Salesforce.com Inc.",
+       "price":247,
+       "low":247,
+       "high":247,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"VZ",
+       "name":"Verizon Communications Inc.",
+       "price":59,
+       "low":59,
+       "high":59,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"V",
+       "name":"Visa Inc.",
+       "price":201,
+       "low":201,
+       "high":201,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"WBA",
+       "name":"Walgreens Boots Alliance Inc.",
+       "price":35,
+       "low":35,
+       "high":35,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"WMT",
+       "name":"Walmart Inc.",
+       "price":140,
+       "low":140,
+       "high":140,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"DIS",
+       "name":"Walt Disney Co.",
+       "price":122,
+       "low":122,
+       "high":122,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    },
+    {
+       "symbol":"DOW",
+       "name":"Dow Jones Industrial Avg.",
+       "price":27682,
+       "low":27682,
+       "high":27682,
+       "bid":0,
+       "ask":0,
+       "numSharesTraded":0,
+       "history":[
+          
+       ]
+    }
+ ]

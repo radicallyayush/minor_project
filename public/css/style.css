@@ -1,0 +1,572 @@
+/* HEADER */
+body{
+    background-color: rgb(5, 5, 5);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    /* top:20px; */
+    position: relative;
+    /* left: 12px; */
+    width: 100%;
+    /* padding-bottom: 20px; */
+    background-color: #0e0f0f;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Helvetica;
+    border-bottom-style: solid;
+    border-bottom-color: #0b0b0b;
+    border-bottom-width: 15px;
+    background-color: rgb(5, 8, 8);
+    background-size: cover;
+
+
+
+}
+.headerButtonsDiv {
+    position: relative;
+    width: 600px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 60px;
+    bottom: 25px;
+}
+#logo {
+    margin-top: 25px;
+    width: 30%;
+}
+
+.goHome {
+    text-decoration: none;
+    color: black;
+}
+.goHome:hover {
+    color:#C7CEEA;
+}
+#dayCounter {
+    position: relative;
+    /* left: 10px; */
+    /* top: 100px; */
+    color: #C7CEEA;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #B5EAD7;
+    max-width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#getNotifications {
+    position: absolute;
+    left: 10px;
+    top: 120px;
+}
+.notify {
+    /* position: absolute;
+    top: 225px;
+    right: 40%; */
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #12a1b0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #1d8dca;
+    transition: all 1s linear;
+    opacity: 0;
+}
+#notifications {
+    position: absolute;
+    top: 200px;
+    right: 40%;
+}
+
+
+
+
+
+
+/* BUTTONS*/
+.buttons {
+    border: none;  
+    background-color: #1a1d1f;
+    width: 100px; 
+    height: 45px;
+    color:white;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    font-family: Helvetica;
+    margin-right: 20px;
+    
+}
+.buttons:hover {
+    background-color: #C7CEEA;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#toOrdersPage:hover {
+    background-color: #C7CEEA;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.smallButtons {
+    border: none;  
+    background-color: #FFB7B2;
+    width: 30px; 
+    height: 30px;
+    color:black;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    font-family: Helvetica;
+    margin-right: 5px;
+    font-size: 90%;
+}
+.smallButtons:hover {
+    background-color: #C7CEEA;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#activated {
+    background-color: #B5EAD7;
+}
+#deactivated {
+    background-color: #FFB7B2;
+}
+#subscribeButton {
+    position: relative;
+    left: 15px;
+    margin: 10px;
+}
+#minPercentChange {
+    height: 30px;
+}
+#addStockToWatchlistOnStockPage {
+    margin: 10px;
+    left: 15px;
+    position: relative;
+}
+#toAdminPage {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #C7CEEA;
+}
+#playOrPauseButton {
+    position: absolute;
+    left: 10px;
+    top: 65px;
+    background-color: #C7CEEA;
+}
+
+
+
+
+
+/* BODY STUFF */
+body {
+    background-color: whitesmoke;
+    font-family: Helvetica;
+    margin-top: 0px;
+}
+
+.column {
+    float: left;
+    width: 45%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    background-color: rgb(11, 10, 10);
+    border: 3px solid #B5EAD7;
+    box-shadow: 10px 10px 8px 10px  #C7CEEA;
+}
+.left, .right, .middle {
+    width: 27.5%;
+    margin-left: 50px;
+}
+.middle{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.row:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+
+.feature {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family: Helvetica;
+    font-size: larger;
+    color:white;
+}
+.featureimg {
+    float: right;
+    margin-right: 40%;
+    padding-bottom: 20px;
+}
+
+#loginFormDiv {
+    margin: auto;
+    width: 25%;
+    border: 3px solid #B5EAD7;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: Helvetica;
+    box-shadow: 10px 10px 8px 10px  #C7CEEA;
+}
+    #username {
+        margin-bottom: 20px;
+        height: 25px;
+        margin-left: 6px;
+    }
+    #password {
+        margin-bottom: 20px;
+        height: 25px;
+        margin-left: 10px;
+    }
+    #enterButton {
+        position: relative;
+        width: 250px;
+        left: 10px;
+    }
+
+
+#registerFormDiv {
+    margin: auto;
+    width: 25%;
+    border: 3px solid #B5EAD7;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: Helvetica;
+    box-shadow: 10px 10px 8px 10px  #C7CEEA;
+}
+    #usernameReg {
+        margin-bottom: 20px;
+        height: 25px;
+        margin-left: 10px;
+    }
+    #passwordReg {
+        margin-bottom: 20px;
+        height: 25px;
+        margin-left: 13px;
+    }
+    #firstNameReg {
+        margin-bottom: 20px;
+        height: 25px;
+        margin-left: 9px;
+    }
+    #lastNameReg {
+        margin-bottom: 20px;
+        height: 25px;
+        margin-left: 10px;
+    }
+    #submitRegister {
+        position: relative;
+        left: 10px;
+    }
+    #emailReg {
+        margin-bottom: 20px;
+        height: 25px;
+        margin-left: 45px;
+    }
+
+#ordersDiv {
+        margin: auto;
+        width: 25%;
+        border: 3px solid #B5EAD7;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        font-family: Helvetica;
+        box-shadow: 10px 10px 8px 10px  #C7CEEA;
+}
+    #orderStock {
+        width: 70px;
+    }
+    #orderQuantity {
+        margin: 10px;
+        height: 25px;
+    }
+    #orderLimit {
+        margin: 10px;
+        height: 25px;
+    }
+    #submitOrder {
+        margin-top: 20px;
+        background-color: #B5EAD7;
+    }
+
+#forgotPasswordDiv {
+        margin: auto;
+        width: 25%;
+        border: 3px solid #B5EAD7;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        font-family: Helvetica;
+        box-shadow: 10px 10px 8px 10px  #C7CEEA;
+}
+    #usernameForgot {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+/* USER PAGE */
+#selectMyWatchlists {
+    width: 150px;
+    height: 30px;
+    /* margin-bottom: 25px; */
+    /* margin-right: 10px; */
+    margin: 10px;
+}
+#allStocks {
+    position: relative;
+    width: 75px;
+    height: 30px;
+    /* margin-bottom: 10px; */
+    /* margin-right: 10px; */
+    margin: 10px;
+}
+#newWatchlistName {
+    width: 150px;
+    height: 30px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+#newnameLabel {
+    margin-left: 20px;
+}
+#myCash {
+    color: #FF9AA2;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #B5EAD7;
+    width: fit-content;
+    padding: 10px;
+}
+#totalValue {
+    color: #FF9AA2;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #B5EAD7;
+    width: fit-content;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/* TABLES */
+table {
+    border-style: solid;
+    border-radius: 10px;
+    border-color:#B5EAD7;
+    text-align: left;
+    width: 80%;
+    position: relative;
+    left: 150px;
+    
+    border: 3px solid #B5EAD7;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 8px 10px  #C7CEEA;
+    border-radius: 10px;
+}
+td {
+    width: 100px;
+}
+#myStocksHeader {
+    border-style: none;
+    font-weight: 250;
+    background-color: whitesmoke;
+    box-shadow: none;
+}
+#myWatchlistHeader {
+    border-style: none;
+    font-weight: 250;
+    background-color: whitesmoke;
+    box-shadow: none;
+}
+#stocksHeader {
+    border-style: none;
+    font-weight: 250;
+    background-color: whitesmoke;
+    box-shadow: none;
+}
+#stockName {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#stockCard {
+    /* width: 25%; */
+    border-style: none;
+    box-shadow: none;
+    left: 55px;
+    /* width: 350px; */
+    padding: 20px;
+    /* left: 100px; */
+}
+#subscribeTable {
+    /* margin: auto; */
+    /* position: relative; */
+    /* width: 20%; */
+    /* width: fit-content; */
+    padding: 20px;
+    text-align: center;
+    border-style: none;
+    box-shadow: none;
+    left: 25px;
+    /* left: 910px; */
+    /* bottom: 380px; */
+}
+#ordersDivOnStockPage {
+    /* margin: auto; */
+    /* position: relative; */
+    /* width: 25%; */
+    /* width: fit-content; */
+    /* padding: 20px; */
+    /* left: 545px; */
+    /* bottom: 250px; */
+    /* border: 3px solid #B5EAD7; */
+    /* border-radius: 10px; */
+    text-align: center;
+    font-family: Helvetica;
+    /* box-shadow: 10px 10px 8px 10px  #C7CEEA; */
+}
+#stockHistoryHeader {
+    border-style: none;
+    font-weight: 250;
+    background-color: whitesmoke;
+    box-shadow: none;
+}
+#myPendingOrdersHeader {
+    border-style: none;
+    font-weight: 250;
+    background-color: whitesmoke;
+    box-shadow: none;
+}
+#myHistoryHeader {
+    border-style: none;
+    font-weight: 250;
+    background-color: whitesmoke;
+    box-shadow: none;
+}
+#mySubscriptionsHeader {
+    border-style: none;
+    font-weight: 250;
+    background-color: whitesmoke;
+    box-shadow: none;
+}
+#historyPageTableHeader{
+    border-style: none;
+    font-weight: 250;
+    background-color: whitesmoke;
+    box-shadow: none;
+}
+#startdayHistoryInput{
+    width: 75px;
+}
+#enddayHistoryInput{
+    width: 75px;
+}
+#profit {
+    color:#7FA497;
+}
+#loss {
+    color:#B3807D;
+}
+
+
+
+
+/*ADMIN PAGE*/
+
+#adminDiv {
+    margin: auto;
+    width: 25%;
+    border: 3px solid #B5EAD7;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: Helvetica;
+    box-shadow: 10px 10px 8px 10px  #C7CEEA;
+}
+    #deposit {
+        margin-left: 10px;
+        margin-bottom: 25px;
+        height: 25px;
+        width: 100px;
+    }
+    #depositButton {
+        position: relative;
+        margin-left: 10px;
+    }
+    #withdraw {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        height: 25px;
+        width: 100px;
+    }
+    #withdrawButton {
+        position: relative;
+        margin-left: 10px;
+    }
+    #eod {
+        margin-top: 25px;
+        width: 100%;
+        background-color: #C7CEEA;
+    }
+
+/* HISTORY AND NEWS */
+
+.historySearch{
+    margin:10px;
+    height: 25px;
+}
+#actionHistory {
+    height: 25px;
+    font-size:95%;
+}
+#historySearchForm{
+    width: 38%;
+    right: 200px;
+}
+#historyStockSearchForm{
+    width: 31%;
+    margin-bottom: 25px;
+}
+
+#searchNews {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+    border: 3px solid #B5EAD7;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: Helvetica;
+    box-shadow: 10px 10px 8px 10px  #C7CEEA;
+}

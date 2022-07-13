@@ -1,0 +1,26 @@
+html(lang="en")
+    head
+        title Better Loot
+        link(rel="stylesheet", href="style.css")
+        link(rel="icon", type="image/png",  href="logo1.png")
+    body(onload="initNews()")
+        div(class="header", id="header")
+                div
+                    img(src="logo1.png", alt="BetterLoot", id="logo")
+                if username
+                    div(class="headerButtonsDiv")
+                        a(href="./orders")
+                            button(class="buttons", id="toOrdersPage") Trade
+                        - var backToPortfolio = "./users/"+username
+                        a(href=backToPortfolio)
+                            button(class="buttons", id="toPortfolio") My Portfolio
+                        a(href="./logout")
+                            button(class="buttons", id="toLogout") Logout
+        if !username
+            a(href="./index.html") Back home
+        div(id="searchNews")
+            label(for="selectStock") View news for stock: 
+            select(name="selectStock", id="allStocks")
+            button(class="buttons", id="viewNews") Search
+        div(id="news")
+        script(src="/script.js")

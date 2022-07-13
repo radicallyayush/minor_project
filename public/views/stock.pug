@@ -1,0 +1,124 @@
+html(lang="en")
+    head
+        title Better Loot
+        link(rel="stylesheet", href="../style.css")
+        link(rel="icon", type="image/png", sizes="32x32", href="../favicon-32x32.png")
+    body(onload="initStockPage()")
+        div(class="header", id="header")
+                div
+                    img(src="logo1.png", alt="BetterLoot", id="logo")
+                div(class="headerButtonsDiv")
+                    a(href="../news")
+                        button(class="buttons", id="toNewsPage") News
+                    a(href="../orders")
+                        button(class="buttons", id="toOrdersPage") Trade
+                    - var backToPortfolio = "../users/"+user.username
+                    a(href=backToPortfolio)
+                        button(class="buttons", id="toPortfolio") My Portfolio
+                    a(href="../logout")
+                        button(class="buttons", id="toLogout") Logout
+        div
+            a(href="../stocks", class="textlink") Back To Stocks
+            h2(id="stockName") #{stock.name}
+        div(class="row")
+            div(class="column left")
+                table(id="stockCard")
+                    tr
+                        td Company:
+                        td #{stock.name}
+                    tr
+                        td Symbol:
+                        td(id="thisStockSymbol") #{stock.symbol}
+                    tr
+                        td Price:
+                        td $#{stock.price}
+                    tr
+                        td Daily Low:
+                        td $#{stock.low}
+                    tr
+                        td Daily High:
+                        td $#{stock.high}
+                    tr
+                        td Current Bid:
+                        td $#{stock.bid}
+                    tr
+                        td Current Ask:
+                        td $#{stock.ask}
+                    tr
+                        td Shares Traded Today:
+                        td #{stock.numSharesTraded}
+                    if userData
+                        tr
+                            td Shares You Own:
+                            td #{userData.quantity}
+                        tr
+                            td Your Average Price:
+                            td $#{userData.avgPrice}
+                        tr
+                            td Your Market Value:
+                            if userData.quantity>0
+                                td $#{(userData.quantity*userData.avgPrice).toFixed(2)}
+            div(class="column middle")
+                div(id="ordersDivOnStockPage")
+                    label(for="buy")      Buy     
+                    input(type="radio", name="orderType", id="buy")
+                    label(for="sell")      Sell     
+                    input(type="radio", name="orderType", id="sell")
+                    br
+                    label(for="orderQuantity") Quantity: 
+                    input(type="number", name="orderQuantity", id="orderQuantity")
+                    br
+                    label(for="orderLimit") Limit Price: 
+                    input(type="number", name="orderLimit", id="orderLimit")
+                    br
+                    label(for="orderEOD")      End of Day     
+                    input(type="radio", name="orderExpire", id="orderEOD")
+                    label(for="orderGTC")      Until Cancelled     
+                    input(type="radio", name="orderExpire", id="orderGTC")
+                    br
+                    button(class="buttons", id="submitOrder") Place Order
+            div(class="column right")
+                table(id="subscribeTable")
+                    tr
+                        td
+                            label(for="minPercentChange", id="minPercentChangeLabel") Min % Change:
+                        td
+                            input(type="number", id="minPercentChange")
+                    tr
+                        td(colspan="2")
+                            button(class="buttons", id="subscribeButton") Subscribe
+                    tr
+                        td
+                            label(for="myWatchlistsOnStockPage") Watchlist: 
+                        td
+                            select(name="myWatchlists", id="selectMyWatchlists")
+                    tr
+                        td(colspan="2")
+                            button(class="buttons", id="addStockToWatchlistOnStockPage") Add to Watchlist
+        div(id="historicalData")
+            h2 Historical Data
+            table(id="historyStockSearchForm")
+                tr
+                    td
+                        form
+                            label(class="historySearch", for="startdayHistory", id="startdayHistoryLabel") Start Day:   
+                            input(class="historySearch", type="number", id="startdayHistoryInput", name="startday")
+                            label(class="historySearch", for="enddayHistory", id="enddayHistoryLabel") End Day:   
+                            input(class="historySearch", type="number", id="enddayHistoryInput", name="endday")
+                            button(class="smallButtons", type="submit", id="goHistoryButton") Go
+            table(id="stockHistoryHeader")
+                tr
+                    td Day
+                    td Closing Price
+                    td Number of Shares Traded
+                    td Daily Low
+                    td Daily High
+            table
+                each day in history
+                    tr
+                        td #{day.day}
+                        td #{day.closing}
+                        td #{day.numSharesTraded}
+                        td #{day.low}
+                        td #{day.high}
+        script(src="../script.js")

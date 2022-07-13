@@ -1,0 +1,72 @@
+html(lang="en")
+    head
+        title Better Loot
+        link(rel="stylesheet", type="text/css", href="/style.css")
+        link(rel="icon", type="image/png", sizes="32x32", href="/favicon-32x32.png")
+    body(id="body", onload="initUserPage()")
+        div(id="notifications")
+            div(id="notify", class="notify", hidden)
+        div(class="header", id="header")
+            div
+                - var backToPortfolio = "../users/"+user.username
+                img(src="logo1.png", alt="BetterLoot", id="logo")
+            a(href="../admin")
+                button(class="buttons", id="toAdminPage") Admin
+            //- button(class="buttons", id="playOrPauseButton") ... 
+            //- button(class="buttons", id="getNotifications") ...
+            div(class="headerButtonsDiv")
+                a(href="../news")
+                    button(class="buttons", id="toNewsPage") News
+                a(href="../"+user.userID+"/history")
+                    button(class="buttons", id="searchHistory") Search
+                a(href="../orders")
+                    button(class="buttons", id="toOrdersPage") Trade
+                a(href="../stocks")
+                    button(class="buttons", id="toStockPage") Stocks
+                a(href="../logout")
+                    button(class="buttons", id="toLogout") Logout
+        h2 Hi, #{user.username} 
+        h4 (id:#{user.userID})
+            h3(id="dayCounter")
+            h3(id="myCash") Cash:
+            h3(id="totalValue") Total Market Value: 
+            table(id="myStocksHeader")
+            table(id="myStocks")
+            br
+        h2 Watchlists
+            h6
+            div(id="myWatchlists")
+                label(for="myWatchlists") Select: 
+                select(name="myWatchlists", id="selectMyWatchlists")
+                button(class="smallButtons", id="addWatchlist") +
+                button(class="smallButtons", id="removeWatchlist") -
+                button(class="smallButtons", id="refreshWatchlist") Go
+                //- label(for="newWatchlistName", id="newnameLabel") New:
+                //- input(type="text", id="newWatchlistName")
+            div
+                label(for="allStocks") Stocks: 
+                select(name="allStocks", id="allStocks")
+                button(class="smallButtons", id="addStockToWatchlist") +
+                button(class="smallButtons", id="removeStockFromWatchlist") -
+            table(id="myWatchlistHeader")
+            table(id="myWatchlistView")
+        h2 Event Subscriptions
+            div(id="mySubscriptions")
+                table(id="mySubscriptionsHeader")
+                table(id="mySubscriptionsTable")
+        br
+        h2 Account History
+            div(id="myHistory")
+                button(class="buttons", id="historyTradesButton") Trades
+                button(class="buttons", id="historyTransactionsButton") Cash
+                a(href="../"+user.userID+"/history")
+                    button(class="buttons", id="searchHistory") Search
+            br
+            table(id="myHistoryHeader")
+            table(id="myHistoryTable")
+        br
+        h2 My Pending Orders
+            table(id="myPendingOrdersHeader")
+            table(id="myPendingOrdersTable")
+        br
+        script(src="/script.js")

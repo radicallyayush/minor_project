@@ -1,0 +1,69 @@
+html(lang="en")
+    head
+        title Better Loot
+        link(rel="stylesheet", href="../style.css")
+        link(rel="icon", type="image/png", sizes="32x32", href="../favicon-32x32.png")
+    body()
+        div(class="header", id="header")
+                div
+                    img(src="logo1.png", alt="BetterLoot", id="logo")
+                div(class="headerButtonsDiv")
+                    a(href="../news")
+                        button(class="buttons", id="toNewsPage") News
+                    a(href="../orders")
+                        button(class="buttons", id="toOrdersPage") Trade
+                    - var backToPortfolio = "../users/"+username
+                    a(href=backToPortfolio)
+                        button(class="buttons", id="toPortfolio") My Portfolio
+                    a(href="../logout")
+                        button(class="buttons", id="toLogout") Logout
+        div
+            a(href=backToPortfolio, class="textlink") Back To Portfolio
+        table(id="historySearchForm")
+            tr
+                td
+                    form
+                        select(class="historySearch", name="action", id="actionHistory")
+                            option(value="buy") Buy
+                            option(value="sell") Sell
+                            option(value="deposit") Deposit
+                            option(value="withdraw") Withdraw
+                        label(class="historySearch", for="startdayHistory", id="startdayHistoryLabel") Start Day:   
+                        input(class="historySearch", type="number", id="startdayHistoryInput", name="startday")
+                        label(class="historySearch", for="enddayHistory", id="enddayHistoryLabel") End Day:   
+                        input(class="historySearch", type="number", id="enddayHistoryInput", name="endday")
+                        button(class="smallButtons", type="submit", id="goHistoryButton") Go
+        div
+            h2 History Search Results
+        if data
+            if whichTable=="trade"
+                table(id="historyPageTableHeader")
+                    tr
+                        td Day
+                        td Symbol
+                        td Type
+                        td Total Price
+                        td Quantity
+                        td Price Per Share
+                table
+                    each day in data
+                        tr
+                            td #{day.day}
+                            td #{day.symbol}
+                            td #{day.type}
+                            td #{day.amount}
+                            td #{day.quantity}
+                            td #{day.pricePerShare}
+            else if whichTable=="account"
+                table(id="historyPageTableHeader")
+                    tr
+                        td Day
+                        td Transaction
+                        td Amount
+                table
+                    each day in data
+                        tr
+                            td #{day.day}
+                            td #{day.type}
+                            td #{day.amount}
+        

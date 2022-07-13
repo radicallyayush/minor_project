@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Better Loot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+</head>
+
+
+
+<body onload="initRegister()">
+    <div class="header" id="header">
+        <div><a class="goHome" href="./index.html"><img src="logo1.png" alt="BetterLoot" id="logo"></a></div>
+
+        <div class="headerButtonsDiv">
+            <a href="./news"><button class = "buttons" id="toNewsPage">News</button></a>
+            <a href="./login_page.html"><button class = "buttons" id="toLoginPageButton">Login</button></a>
+            <a href="./register.html"><button class = "buttons" id="toRegisterPageButton">Register</button></a>
+        </div>
+    </div>
+
+    <br>
+    
+
+    <div id="registerFormDiv">
+        <h2 id="title">Register</h2>
+
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="usernameReg">
+        <br>
+
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="passwordReg">
+        <br>
+
+        <label for="firstname">First name: </label>
+        <input type="text" name="firstname" id="firstNameReg">
+        <br>
+
+        <label for="lastname">Last name: </label>
+        <input type="text" name="lastname" id="lastNameReg">
+        <br>
+
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="emailReg">
+        <br>
+
+        <button class = "buttons" id="submitRegister">Register</button>
+
+        <p>Begin your quest to financial independance.</p>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

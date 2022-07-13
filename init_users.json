@@ -1,0 +1,567 @@
+[
+    {
+       "username":"admin",
+       "password":"admin",
+       "firstName":"Michael",
+       "lastName":"Grewal",
+       "email":"mail@mail.com",
+       "cash":10000000,
+       "myStocks":[
+   {
+      "symbol":"AXP",
+      "name":"American Express Company",
+      "price":101,
+      "avgPrice":101,
+      "quantity":99999
+   },
+   {
+      "symbol":"AMGN",
+      "name":"Amgen Inc.",
+      "price":245,
+      "avgPrice":245,
+      "quantity":99999
+   },
+   {
+      "symbol":"AAPL",
+      "name":"Apple Inc.",
+      "price":113,
+      "avgPrice":113,
+      "quantity":99999
+   },
+   {
+      "symbol":"BA",
+      "name":"Boeing Co.",
+      "price":168,
+      "avgPrice":168,
+      "quantity":99999
+   },
+   {
+      "symbol":"CAT",
+      "name":"Caterpillar Inc.",
+      "price":149,
+      "avgPrice":149,
+      "quantity":99999
+   },
+   {
+      "symbol":"CSCO",
+      "name":"Cisco Systems Inc.",
+      "price":38,
+      "avgPrice":38,
+      "quantity":99999
+   },
+   {
+      "symbol":"CVX",
+      "name":"Chevron Corp.",
+      "price":71,
+      "avgPrice":71,
+      "quantity":99999
+   },
+   {
+      "symbol":"GS",
+      "name":"Goldman Sachs Group Inc.",
+      "price":199,
+      "avgPrice":199,
+      "quantity":99999
+   },
+   {
+      "symbol":"HD",
+      "name":"Home Depot Inc.",
+      "price":279,
+      "avgPrice":279,
+      "quantity":99999
+   },
+   {
+      "symbol":"HON",
+      "name":"Honeywell International Inc.",
+      "price":165,
+      "avgPrice":165,
+      "quantity":99999
+   },
+   {
+      "symbol":"IBM",
+      "name":"IBM",
+      "price":120,
+      "avgPrice":120,
+      "quantity":99999
+   },
+   {
+      "symbol":"INTC",
+      "name":"Intel Corp.",
+      "price":51,
+      "avgPrice":51,
+      "quantity":99999
+   },
+   {
+      "symbol":"JNJ",
+      "name":"Johnson & Johnson",
+      "price":146,
+      "avgPrice":146,
+      "quantity":99999
+   },
+   {
+      "symbol":"KO",
+      "name":"Coca-Cola Co.",
+      "price":49,
+      "avgPrice":49,
+      "quantity":99999
+   },
+   {
+      "symbol":"JPM",
+      "name":"JPMorgan Chase & Co.",
+      "price":97,
+      "avgPrice":97,
+      "quantity":99999
+   },
+   {
+      "symbol":"MCD",
+      "name":"Mcdonald's Corp.",
+      "price":222,
+      "avgPrice":222,
+      "quantity":99999
+   },
+   {
+      "symbol":"MMM",
+      "name":"3M Co.",
+      "price":160,
+      "avgPrice":160,
+      "quantity":99999
+   },
+   {
+      "symbol":"MRK",
+      "name":"Merck & Co., Inc.",
+      "price":80,
+      "avgPrice":80,
+      "quantity":99999
+   },
+   {
+      "symbol":"MSFT",
+      "name":"Microsoft Corp.",
+      "price":206,
+      "avgPrice":206,
+      "quantity":99999
+   },
+   {
+      "symbol":"NKE",
+      "name":"Nike Inc.",
+      "price":126,
+      "avgPrice":126,
+      "quantity":99999
+   },
+   {
+      "symbol":"PG",
+      "name":"Procter & Gamble Co.",
+      "price":138,
+      "avgPrice":138,
+      "quantity":99999
+   },
+   {
+      "symbol":"TRV",
+      "name":"Travelers Companies Inc.",
+      "price":108,
+      "avgPrice":108,
+      "quantity":99999
+   },
+   {
+      "symbol":"UNH",
+      "name":"UnitedHealth Group Inc.",
+      "price":311,
+      "avgPrice":311,
+      "quantity":99999
+   },
+   {
+      "symbol":"CRM",
+      "name":"Salesforce.com Inc.",
+      "price":247,
+      "avgPrice":247,
+      "quantity":99999
+   },
+   {
+      "symbol":"VZ",
+      "name":"Verizon Communications Inc.",
+      "price":59,
+      "avgPrice":59,
+      "quantity":99999
+   },
+   {
+      "symbol":"V",
+      "name":"Visa Inc.",
+      "price":201,
+      "avgPrice":201,
+      "quantity":99999
+   },
+   {
+      "symbol":"WBA",
+      "name":"Walgreens Boots Alliance Inc.",
+      "price":35,
+      "avgPrice":35,
+      "quantity":99999
+   },
+   {
+      "symbol":"WMT",
+      "name":"Walmart Inc.",
+      "price":140,
+      "avgPrice":140,
+      "quantity":99999
+   },
+   {
+      "symbol":"DIS",
+      "name":"Walt Disney Co.",
+      "price":122,
+      "avgPrice":122,
+      "quantity":99999
+   },
+   {
+      "symbol":"DOW",
+      "name":"Dow Jones Industrial Avg.",
+      "price":27682,
+      "avgPrice":27682,
+      "quantity":99999
+   }
+],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":999
+    },
+    {
+      "username":"demo1",
+      "password":"demoman",
+      "firstName":"demo1",
+      "lastName":"demo1",
+      "email":"demo1@mail.com",
+      "cash":1000000,
+      "myStocks":[],
+      "myWatchlists":[
+         
+      ],
+      "history":[
+         
+      ],
+      "userID":800
+   },
+    {
+       "username":"auto1",
+       "password":"tester",
+       "firstName":"auto1",
+       "lastName":"auto1",
+       "email":"auto1@mail.com",
+       "cash":1000000,
+       "myStocks":[
+          
+       ],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":901
+    },
+    {
+       "username":"auto2",
+       "password":"tester",
+       "firstName":"auto2",
+       "lastName":"auto2",
+       "email":"auto2@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":902
+    },
+    {
+       "username":"auto3",
+       "password":"tester",
+       "firstName":"auto3",
+       "lastName":"auto3",
+       "email":"auto3@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":903
+    },
+    {
+       "username":"auto4",
+       "password":"tester",
+       "firstName":"auto4",
+       "lastName":"auto4",
+       "email":"auto4@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":904
+    },
+    {
+       "username":"auto5",
+       "password":"tester",
+       "firstName":"auto5",
+       "lastName":"auto5",
+       "email":"auto5@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":905
+    },
+    {
+       "username":"auto6",
+       "password":"tester",
+       "firstName":"auto6",
+       "lastName":"auto6",
+       "email":"auto6@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":906
+    },
+    {
+       "username":"auto7",
+       "password":"tester",
+       "firstName":"auto7",
+       "lastName":"auto7",
+       "email":"auto7@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":907
+    },
+    {
+       "username":"auto8",
+       "password":"tester",
+       "firstName":"auto8",
+       "lastName":"auto8",
+       "email":"auto8@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":908
+    },
+    {
+       "username":"auto9",
+       "password":"tester",
+       "firstName":"auto9",
+       "lastName":"auto9",
+       "email":"auto9@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":909
+    },
+    {
+       "username":"auto10",
+       "password":"tester",
+       "firstName":"auto10",
+       "lastName":"auto10",
+       "email":"auto10@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":910
+    },
+    {
+       "username":"auto11",
+       "password":"tester",
+       "firstName":"auto11",
+       "lastName":"auto11",
+       "email":"auto11@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":911
+    },
+    {
+       "username":"auto12",
+       "password":"tester",
+       "firstName":"auto12",
+       "lastName":"auto12",
+       "email":"auto12@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":912
+    },
+    {
+       "username":"auto13",
+       "password":"tester",
+       "firstName":"auto13",
+       "lastName":"auto13",
+       "email":"auto13@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":913
+    },
+    {
+       "username":"auto14",
+       "password":"tester",
+       "firstName":"auto14",
+       "lastName":"auto14",
+       "email":"auto14@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":914
+    },
+    {
+       "username":"auto15",
+       "password":"tester",
+       "firstName":"auto15",
+       "lastName":"auto15",
+       "email":"auto15@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":915
+    },
+    {
+       "username":"auto16",
+       "password":"tester",
+       "firstName":"auto16",
+       "lastName":"auto16",
+       "email":"auto16@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":916
+    },
+    {
+       "username":"auto17",
+       "password":"tester",
+       "firstName":"auto17",
+       "lastName":"auto17",
+       "email":"auto17@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":917
+    },
+    {
+       "username":"auto18",
+       "password":"tester",
+       "firstName":"auto18",
+       "lastName":"auto18",
+       "email":"auto18@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":918
+    },
+    {
+       "username":"auto19",
+       "password":"tester",
+       "firstName":"auto19",
+       "lastName":"auto19",
+       "email":"auto19@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":919
+    },
+    {
+       "username":"auto20",
+       "password":"tester",
+       "firstName":"auto20",
+       "lastName":"auto20",
+       "email":"auto20@mail.com",
+       "cash":1000000,
+       "myStocks":[],
+       "myWatchlists":[
+          
+       ],
+       "history":[
+          
+       ],
+       "userID":920
+    }
+ ]

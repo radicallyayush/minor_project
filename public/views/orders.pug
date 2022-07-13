@@ -1,0 +1,42 @@
+html(lang="en")
+    head
+        title Better Loot
+        link(rel="stylesheet", href="/style.css", type="text/css")
+        link(rel="icon", type="image/png", sizes="32x32", href="/favicon-32x32.png")
+    body(onload="initOrdersPage()")
+        div(class="header", id="header")
+            div
+                - var backToPortfolio = "./users/"+user.username
+                img(src="logo1.png", alt="BetterLoot", id="logo")
+            div(class="headerButtonsDiv")
+                a(href="./news")
+                    button(class="buttons", id="toNewsPage") News
+                a(href="./stocks")
+                    button(class="buttons", id="toStockPage") Stocks
+                a(href=backToPortfolio)
+                    button(class="buttons", id="toPortfolio") My Portfolio
+                a(href="./logout")
+                    button(class="buttons", id="toLogout") Logout
+        br
+        div(id="ordersDiv")
+            h2(id="titleOrder") Create Order
+            label(for="buy") Buy
+            input(type="radio", name="orderType", id="buy")
+            label(for="sell") Sell
+            input(type="radio", name="orderType", id="sell")
+            label(for="orderStock") Stock: 
+            select(name="orderStock", id="allStocks")
+            br
+            label(for="orderQuantity") Quantity: 
+            input(type="number", name="orderQuantity", id="orderQuantity")
+            br
+            label(for="orderLimit") Limit Price: 
+            input(type="number", name="orderLimit", id="orderLimit")
+            br
+            label(for="orderEOD") End of Day
+            input(type="radio", name="orderExpire", id="orderEOD")
+            label(for="orderGTC") Until Cancelled
+            input(type="radio", name="orderExpire", id="orderGTC")
+            br
+            button(class="buttons", id="submitOrder") Place Order
+        script(src="/script.js")

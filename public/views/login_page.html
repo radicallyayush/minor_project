@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Better Loot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+</head>
+
+
+<body onload="initLogin()">
+
+    <div class="header" id="header">
+        <div><a class="goHome" href="./index.html"><img src="logo1.png" alt="BetterLoot" id="logo"></a></div>
+
+        <div class="headerButtonsDiv">
+            <a href="./login_page.html"><button class = "buttons" id="toLoginPageButton">Login</button></a>
+            <a href="./register.html"><button class = "buttons" id="toRegisterPageButton">Register</button></a>
+        </div>
+    </div>
+
+
+    <br>
+
+    <div id="loginFormDiv">
+        <h2 id="title">Login</h2>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+        <br>
+
+        <a><button class = "buttons" id="enterButton">Enter</button></a>
+
+        <p>Forgot password? <a href="./forgot_password.html">Click here.</a></p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
